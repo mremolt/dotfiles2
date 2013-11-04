@@ -25,8 +25,8 @@ NeoBundle 'ervandew/supertab'
 NeoBundle 'vim-scripts/matchit.zip'
 
 " coding enhancements
+NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle "tomtom/tcomment_vim"
-NeoBundle "mattn/zencoding-vim"
 NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'kana/vim-textobj-user'
 NeoBundle 'AndrewRadev/switch.vim'

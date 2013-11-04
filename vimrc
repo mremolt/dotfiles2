@@ -3,17 +3,19 @@ source ~/.vim/bundle.vim
 
 " basic settings
 set nocompatible
+set encoding=utf-8
 
 let mapleader = ","
-
 
 " syntax & color
 syntax enable
 set t_Co=256
 set background=dark
+colorscheme jellybeans
 
 set relativenumber
-set encoding=utf-8
+set ruler
+set showcmd
 
 " code display and identation
 set nowrap
