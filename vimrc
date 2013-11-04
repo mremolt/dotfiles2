@@ -55,7 +55,8 @@ map <leader>f mf1G=G`f
 " load last file in buffer to current window
 map <leader><leader> <C-^>
 
-
+" remove trailing spaces
+:nnoremap <silent> <F8> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 
 " Unite.vim
@@ -77,3 +78,30 @@ function! s:unite_my_settings() "{{{
   imap <silent><buffer><expr> <C-s> unite#do_action('split')
   imap <silent><buffer><expr> <C-v> unite#do_action('vsplit')
 endfunction "}}}
+
+
+" Unimpaired configuration
+" making C-Arrow work under tmux
+" see http://superuser.com/questions/401926/how-to-get-shiftarrows-and-ctrlarrows-working-in-vim-in-tmux
+if &term =~ '^screen'
+  " tmux will send xterm-style keys when its xterm-keys option is on
+  execute "set <xUp>=\e[1;*A"
+  execute "set <xDown>=\e[1;*B"
+  execute "set <xRight>=\e[1;*C"
+  execute "set <xLeft>=\e[1;*D"
+endif
+" Bubble single lines
+nmap <C-Up> [e
+nmap <C-Down> ]e
+" Bubble multiple lines
+vmap <C-Up> [egv
+vmap <C-Down> ]egv
+
+
+" tcomment
+nnoremap // :TComment<CR>
+vnoremap // :TComment<CR>
+
+
+" switch.vim
+nnoremap - :Switch<cr>
