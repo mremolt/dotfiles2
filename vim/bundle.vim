@@ -39,6 +39,7 @@ NeoBundle 'tpope/vim-repeat'
 " languages
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'nelstrom/vim-textobj-rubyblock'
+NeoBundle 'tpope/vim-bundler'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tpope/vim-haml'
 NeoBundle 'ap/vim-css-color'
@@ -50,6 +51,8 @@ NeoBundle 'avakhov/vim-yaml'
 
 
 " frameworks & libs
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'jQuery'
 
 
 
