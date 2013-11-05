@@ -37,7 +37,6 @@ NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-repeat'
-NeoBundle 'gcmt/tag-surfer', { 'build' : './complete-installation.sh' }
 
 " languages
 NeoBundle 'pangloss/vim-javascript'
