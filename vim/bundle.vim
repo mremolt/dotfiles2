@@ -20,9 +20,11 @@ NeoBundle 'Shougo/vimproc', {
 
 " editor improvements
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'tsukkee/unite-tag'
 NeoBundle 'jeffkreeftmeijer/vim-numbertoggle'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'vim-scripts/matchit.zip'
+NeoBundle 'malkomalko/projections.vim'
 
 " coding enhancements
 NeoBundle 'nanotech/jellybeans.vim'
@@ -35,6 +37,7 @@ NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-repeat'
+NeoBundle 'gcmt/tag-surfer', { 'build' : './complete-installation.sh' }
 
 " languages
 NeoBundle 'pangloss/vim-javascript'
@@ -49,14 +52,13 @@ NeoBundle 'tpope/vim-markdown'
 NeoBundle 'nono/vim-handlebars'
 NeoBundle 'avakhov/vim-yaml'
 
-
 " frameworks & libs
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'jQuery'
 
 
-
 " testing & code quality
+NeoBundle 'Keithbsmiley/rspec.vim'
 
 
 

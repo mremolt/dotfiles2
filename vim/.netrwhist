@@ -1,3 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/mremolt/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0'
+let g:netrw_dirhist_2='/home/mremolt/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/awesome_print-1.2.0'
+let g:netrw_dirhist_3='/home/mremolt/workspace/video-access-service/importer2'
+let g:netrw_dirhist_4='/home/mremolt/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/gem-ctags-1.0.6'
+let g:netrw_dirhist_5='/home/mremolt/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/gem-ctags-1.0.6/lib'
+let g:netrw_dirhist_6='/home/mremolt/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/gem-ctags-1.0.6/lib/rubygems'
+let g:netrw_dirhist_7='/home/mremolt/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/gem-ctags-1.0.6/lib/rubygems/commands'

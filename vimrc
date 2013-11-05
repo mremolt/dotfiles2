@@ -1,4 +1,4 @@
-" vundle config
+" bundle config
 source ~/.vim/bundle.vim
 
 " basic settings
@@ -8,9 +8,9 @@ set encoding=utf-8
 let mapleader = ","
 
 " syntax & color
-syntax enable
 set t_Co=256
 set background=dark
+syntax enable
 colorscheme jellybeans
 
 set relativenumber
@@ -42,9 +42,12 @@ set laststatus=2
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
-
 " save on loosing focus
 au FocusLost * :wa
+
+" Tab completion
+set wildmode=list:longest,list:full
+set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*,public/assets/*,public/assets-test/*,tmp/*"
 
 " deactivate <F1> help
 inoremap <F1> :redraw!<CR>:noh<CR>
@@ -53,6 +56,10 @@ vnoremap <F1> :redraw!<CR>:noh<CR>
 
 " auto indent the code
 map <leader>f mf1G=G`f
+
+"remap jump to tag definition - and back
+map <leader>t <C-]>
+map <leader>o <C-o>
 
 " load last file in buffer to current window
 map <leader><leader> <C-^>
@@ -63,7 +70,7 @@ map <leader><leader> <C-^>
 
 " Unite.vim
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
-call unite#filters#sorter_default#use(['sorter_reverse'])
+" call unite#filters#sorter_default#use(['sorter_reverse'])
 
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 let g:unite_source_history_yank_enable = 1
