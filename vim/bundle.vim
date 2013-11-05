@@ -17,6 +17,7 @@ NeoBundle 'Shougo/vimproc', {
       \    },
       \ }
 
+" dependeny libs
 
 " editor improvements
 NeoBundle 'Shougo/unite.vim'
@@ -37,6 +38,8 @@ NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-repeat'
+NeoBundle 'supasorn/vim-easymotion'
+NeoBundle 'mattn/emmet-vim'
 
 " languages
 NeoBundle 'pangloss/vim-javascript'

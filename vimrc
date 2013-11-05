@@ -114,3 +114,7 @@ vnoremap // :TComment<CR>
 
 " switch.vim
 nnoremap - :Switch<cr>
+
+
+" vim-easymotion
+let g:EasyMotion_leader_key = '<Leader>'
