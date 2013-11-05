@@ -78,7 +78,7 @@ let g:unite_source_history_yank_enable = 1
 nnoremap <F3> :Unite -start-insert file_rec/async<CR>
 nnoremap <F4> :Unite -start-insert buffer<CR>
 nnoremap <F5> :Unite -start-insert grep:.<CR>
-nnoremap <F6> :Unite history/yank<cr>
+nnoremap <F6> :Unite -start-insert tag<cr>
 
 autocmd FileType unite call s:unite_my_settings()
 function! s:unite_my_settings() "{{{
