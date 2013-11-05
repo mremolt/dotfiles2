@@ -118,3 +118,6 @@ nnoremap - :Switch<cr>
 
 " vim-easymotion
 let g:EasyMotion_leader_key = '<Leader>'
+
+" syntastic
+let g:syntastic_ruby_checkers=['mri', 'rubocop']
