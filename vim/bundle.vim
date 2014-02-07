@@ -26,6 +26,8 @@ NeoBundle 'jeffkreeftmeijer/vim-numbertoggle'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'vim-scripts/matchit.zip'
 NeoBundle 'malkomalko/projections.vim'
+NeoBundle 'benmills/vimux'
+NeoBundle 'skalnik/vim-vroom'
 
 " coding enhancements
 NeoBundle 'nanotech/jellybeans.vim'
@@ -53,6 +55,7 @@ NeoBundle 'groenewege/vim-less'
 NeoBundle 'tpope/vim-markdown'
 NeoBundle 'nono/vim-handlebars'
 NeoBundle 'avakhov/vim-yaml'
+NeoBundle 'kchmck/vim-coffee-script'
 
 " frameworks & libs
 NeoBundle 'tpope/vim-rails'

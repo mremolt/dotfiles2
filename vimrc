@@ -72,8 +72,8 @@ map <leader><leader> <C-^>
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 " call unite#filters#sorter_default#use(['sorter_reverse'])
 
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 let g:unite_source_history_yank_enable = 1
+let g:unite_source_rec_async_command = "ack-grep -f --nofilter --ignore-dir=spec/fixtures/integration --ignore-dir=coverage --ignore-dir=log --ignore-file='match:/tmux.*.log/' --ignore-file='match:^tags$'"
 
 nnoremap <F3> :Unite -start-insert file_rec/async<CR>
 nnoremap <F4> :Unite -start-insert buffer<CR>
@@ -120,4 +120,9 @@ nnoremap - :Switch<cr>
 let g:EasyMotion_leader_key = '<Leader>'
 
 " syntastic
-let g:syntastic_ruby_checkers=['mri', 'rubocop']
+let g:syntastic_ruby_checkers = ['mri']
+" let g:syntastic_ruby_checkers=['mri', 'rubocop']
+
+" vimux & vroom
+let g:vroom_use_vimux = 1
+let g:vroom_use_binstubs = 1
