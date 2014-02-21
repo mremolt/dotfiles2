@@ -42,6 +42,9 @@ set laststatus=2
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
+" make backspace work on max + vim
+set backspace=indent,eol,start
+
 " save on loosing focus
 au FocusLost * :wa
 
@@ -67,6 +70,15 @@ map <leader><leader> <C-^>
 " remove trailing spaces
 :nnoremap <silent> <F8> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+    \ 'file': '\.pyc$\|\.pyo$\|\.rbc$|\.rbo$\|\.class$\|\.o$\|\~$\',
+    \ }
+
+map <leader>g :CtrlP<CR>
+map <leader>h :CtrlPBuffer<CR>
+map <c-t> :CtrlP<CR>
+map <c-y> :CtrlPBuffer<CR>
 
 " Unite.vim
 call unite#filters#matcher_default#use(['matcher_fuzzy'])

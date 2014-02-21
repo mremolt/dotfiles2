@@ -1,5 +1,5 @@
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+  # Path to your oh-my-zsh configuration.
+  ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -13,19 +13,21 @@ ZSH_THEME="robbyrussell"
 plugins=(cap deb debian gem git history-substring-search rails bundler rbenv ruby)
 
 source $ZSH/oh-my-zsh.sh
+source ~/.zsh/tmuxinator.zsh
+
 
 # Customize to your needs...
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 
 # rbenv init
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init -)"
 
 export PATH=${PATH}:/home/mremolt/workspace/adt-bundle/sdk/platform-tools:/home/mremolt/workspace/adt-bundle/sdk/tools
 
-export EDITOR="/usr/bin/vim"
-export CFLAGS="-march=native -O3 -pipe -fomit-frame-pointer"
-export RUBY_CFLAGS="-march=native -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration"
+export EDITOR="/usr/local/bin/vim"
+#export CFLAGS="-march=native -O3 -pipe -fomit-frame-pointer"
+#export RUBY_CFLAGS="-march=native -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration"
 # export RUBY_GC_MALLOC_LIMIT=1000000000
 # export RUBY_FREE_MIN=500000
 # export RUBY_HEAP_MIN_SLOTS=40000
@@ -36,11 +38,12 @@ export RUBY_GC_MALLOC_LIMIT=100000000
 export RUBY_HEAP_FREE_MIN=500000
 
 bindkey "^[[A" history-search-backward
-bindkey "^[[B" history-search-forward]]
+bindkey "^[[B" history-search-forward
 
 # Aliases
 unalias ag
 alias tmux='tmux -2'
+alias nst='lsof -lP | grep LISTEN'
 
 export PATH="$HOME/elixir/bin:$PATH"
 
@@ -48,8 +51,6 @@ function paskill() {
   kill $(netstat -tlpn 2>/dev/null | grep '0.0.0.0:3000' | awk '{print $7}' | sed 's/[^0-9]//g')
 }
 
-
-
-
-
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh # This loads NVM

@@ -28,6 +28,7 @@ NeoBundle 'vim-scripts/matchit.zip'
 NeoBundle 'malkomalko/projections.vim'
 NeoBundle 'benmills/vimux'
 NeoBundle 'skalnik/vim-vroom'
+NeoBundle 'kien/ctrlp.vim'
 
 " coding enhancements
 NeoBundle 'nanotech/jellybeans.vim'
@@ -56,6 +57,7 @@ NeoBundle 'tpope/vim-markdown'
 NeoBundle 'nono/vim-handlebars'
 NeoBundle 'avakhov/vim-yaml'
 NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'rradonic/vim-jst'
 
 " frameworks & libs
 NeoBundle 'tpope/vim-rails'
