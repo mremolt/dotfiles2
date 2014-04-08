@@ -80,26 +80,6 @@ map <leader>h :CtrlPBuffer<CR>
 map <c-t> :CtrlP<CR>
 map <c-y> :CtrlPBuffer<CR>
 
-" Unite.vim
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
-" call unite#filters#sorter_default#use(['sorter_reverse'])
-
-let g:unite_source_history_yank_enable = 1
-let g:unite_source_rec_async_command = "ack-grep -f --nofilter --ignore-dir=spec/fixtures/integration --ignore-dir=coverage --ignore-dir=log --ignore-file='match:/tmux.*.log/' --ignore-file='match:^tags$'"
-
-nnoremap <F3> :Unite -start-insert file_rec/async<CR>
-nnoremap <F4> :Unite -start-insert buffer<CR>
-nnoremap <F5> :Unite -start-insert grep:.<CR>
-nnoremap <F6> :Unite -start-insert tag<cr>
-
-autocmd FileType unite call s:unite_my_settings()
-function! s:unite_my_settings() "{{{
-  " Overwrite settings.
-  nmap <buffer> <ESC> <Plug>(unite_exit)
-  imap <silent><buffer><expr> <C-s> unite#do_action('split')
-  imap <silent><buffer><expr> <C-v> unite#do_action('vsplit')
-endfunction "}}}
-
 
 " Unimpaired configuration
 " making C-Arrow work under tmux
@@ -117,6 +97,9 @@ nmap <C-Down> ]e
 " Bubble multiple lines
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
+
+map <D-Left> ]b
+map <D-Right> [b
 
 
 " tcomment
@@ -138,3 +121,6 @@ let g:syntastic_ruby_checkers = ['mri']
 " vimux & vroom
 let g:vroom_use_vimux = 1
 let g:vroom_use_binstubs = 1
+
+" airline
+let g:airline#extensions#tabline#enabled = 1

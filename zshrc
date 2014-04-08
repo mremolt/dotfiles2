@@ -23,7 +23,10 @@ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/ga
 # export PATH="$HOME/.rbenv/bin:$PATH"
 # eval "$(rbenv init -)"
 
-export PATH=${PATH}:/home/mremolt/workspace/adt-bundle/sdk/platform-tools:/home/mremolt/workspace/adt-bundle/sdk/tools
+# export PATH=${PATH}:/home/mremolt/workspace/adt-bundle/sdk/platform-tools:/home/mremolt/workspace/adt-bundle/sdk/tools
+
+export PATH=/usr/local/Cellar/android-sdk/22.3/platform-tools:/usr/local/Cellar/android-sdk/22.3/tools:/usr/local/Cellar/android-sdk/22.3/build-tools/19.0.2:${PATH}
+export ANDROID_HOME=/usr/local/Cellar/android-sdk/22.3
 
 export EDITOR="/usr/local/bin/vim"
 #export CFLAGS="-march=native -O3 -pipe -fomit-frame-pointer"

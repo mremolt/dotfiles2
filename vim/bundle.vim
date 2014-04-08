@@ -20,8 +20,6 @@ NeoBundle 'Shougo/vimproc', {
 " dependeny libs
 
 " editor improvements
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'tsukkee/unite-tag'
 NeoBundle 'jeffkreeftmeijer/vim-numbertoggle'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'vim-scripts/matchit.zip'
@@ -29,6 +27,7 @@ NeoBundle 'malkomalko/projections.vim'
 NeoBundle 'benmills/vimux'
 NeoBundle 'skalnik/vim-vroom'
 NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'bling/vim-airline'
 
 " coding enhancements
 NeoBundle 'nanotech/jellybeans.vim'
@@ -68,11 +67,8 @@ NeoBundle 'jQuery'
 NeoBundle 'Keithbsmiley/rspec.vim'
 
 
-
 " version control
 NeoBundle 'tpope/vim-fugitive'
-
-
 
 
 
