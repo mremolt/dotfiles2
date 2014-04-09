@@ -71,15 +71,16 @@ map <leader><leader> <C-^>
 :nnoremap <silent> <F8> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+    \ 'dir':  '\v[\/](\.git|\.hg|\.svn|node_modules|.sass-cache|dist)$',
     \ 'file': '\.pyc$\|\.pyo$\|\.rbc$|\.rbo$\|\.class$\|\.o$\|\~$\',
     \ }
 
 map <leader>g :CtrlP<CR>
 map <leader>h :CtrlPBuffer<CR>
-map <c-t> :CtrlP<CR>
-map <c-y> :CtrlPBuffer<CR>
-
+noremap <c-t> :CtrlP<CR>
+noremap <c-y> :CtrlPBuffer<CR>
+inoremap <c-t> <ESC>:CtrlP<CR>
+inoremap <c-y> <ESC>:CtrlPBuffer<CR>
 
 " Unimpaired configuration
 " making C-Arrow work under tmux
